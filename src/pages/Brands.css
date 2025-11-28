@@ -1,0 +1,259 @@
+.brands-page {
+    padding-bottom: 8rem;
+    background-color: #f8fafc;
+}
+
+.brands-intro {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 5rem;
+    font-size: 1.25rem;
+    color: var(--color-text-light);
+    line-height: 1.8;
+    animation: fadeInUp 0.8s ease-out;
+}
+
+.brands-wrapper {
+    margin-bottom: 8rem;
+}
+
+/* Featured Partners Section */
+.featured-partners {
+    margin-top: 8rem;
+    position: relative;
+}
+
+.featured-partners .section-title {
+    margin-bottom: 4rem;
+    position: relative;
+    display: inline-block;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.featured-partners .section-title::after {
+    content: '';
+    position: absolute;
+    bottom: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80px;
+    height: 4px;
+    background: linear-gradient(90deg, var(--color-primary), var(--color-accent));
+    border-radius: 2px;
+}
+
+.partner-showcase {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    gap: 3rem;
+    margin-top: 3rem;
+}
+
+.partner-card {
+    background: #fff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow:
+        0 4px 6px -1px rgba(0, 0, 0, 0.05),
+        0 2px 4px -1px rgba(0, 0, 0, 0.03);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+    border: 1px solid rgba(0, 0, 0, 0.03);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.partner-card:hover {
+    transform: translateY(-12px);
+    box-shadow:
+        0 20px 40px -5px rgba(0, 0, 0, 0.1),
+        0 10px 15px -5px rgba(0, 0, 0, 0.05);
+}
+
+/* Logo Area with Dynamic Gradients */
+.partner-logo-area {
+    height: 180px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.5s ease;
+}
+
+.partner-logo-area::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(45deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0));
+    z-index: 1;
+}
+
+.partner-logo-area h3 {
+    font-size: 2.8rem;
+    font-weight: 800;
+    letter-spacing: -1px;
+    z-index: 2;
+    text-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1);
+    transition: transform 0.4s ease;
+}
+
+.partner-card:hover .partner-logo-area h3 {
+    transform: scale(1.1);
+}
+
+/* Brand Specific Gradients */
+.partner-card.viewsonic .partner-logo-area {
+    background: linear-gradient(135deg, #7f1d1d 0%, #b91c1c 100%);
+}
+
+.partner-card.eset .partner-logo-area {
+    background: linear-gradient(135deg, #0e7490 0%, #06b6d4 100%);
+}
+
+.partner-card.tenda .partner-logo-area {
+    background: linear-gradient(135deg, #c2410c 0%, #f97316 100%);
+}
+
+.partner-card.unitek .partner-logo-area {
+    background: linear-gradient(135deg, #be123c 0%, #e11d48 100%);
+}
+
+.partner-card.philips .partner-logo-area {
+    background: linear-gradient(135deg, #1e3a8a 0%, #3b82f6 100%);
+}
+
+.partner-card.aiwa .partner-logo-area {
+    background: linear-gradient(135deg, #000000 0%, #dc2626 100%);
+}
+
+.partner-card.wanbo .partner-logo-area {
+    background: linear-gradient(135deg, #ca8a04 0%, #eab308 100%);
+}
+
+/* Content Area */
+.partner-content {
+    padding: 2.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.partner-content h4 {
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    color: var(--color-primary-dark);
+    font-weight: 700;
+}
+
+.partner-content p {
+    color: var(--color-text-light);
+    margin-bottom: 2rem;
+    line-height: 1.7;
+    font-size: 1.05rem;
+    flex-grow: 1;
+}
+
+/* Product List */
+.partner-products {
+    list-style: none;
+    padding-top: 1.5rem;
+    border-top: 1px solid rgba(0, 0, 0, 0.06);
+    margin-top: auto;
+}
+
+.partner-products li {
+    margin-bottom: 0.8rem;
+    color: var(--color-text-main);
+    display: flex;
+    align-items: center;
+    font-size: 0.95rem;
+    font-weight: 500;
+}
+
+.partner-products li:last-child {
+    margin-bottom: 0;
+}
+
+.partner-products li::before {
+    content: '✓';
+    color: #fff;
+    background: var(--color-primary);
+    font-weight: bold;
+    margin-right: 1rem;
+    font-size: 0.7rem;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+/* Responsive */
+@media (max-width: 1024px) {
+    .partner-logo-area h3 {
+        font-size: 2.5rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .brands-intro {
+        margin-bottom: 3rem;
+        font-size: 1.1rem;
+    }
+
+    .brands-wrapper {
+        margin-bottom: 5rem;
+    }
+
+    .featured-partners {
+        margin-top: 5rem;
+    }
+
+    .featured-partners .section-title {
+        margin-bottom: 3rem;
+    }
+
+    .partner-showcase {
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+    }
+
+    .partner-logo-area {
+        height: 140px;
+    }
+
+    .partner-logo-area h3 {
+        font-size: 2.2rem;
+    }
+
+    .partner-content {
+        padding: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .brands-intro {
+        font-size: 1rem;
+    }
+
+    .partner-logo-area h3 {
+        font-size: 1.8rem;
+    }
+
+    .partner-content h4 {
+        font-size: 1.3rem;
+    }
+
+    .partner-products li {
+        font-size: 0.9rem;
+    }
+}
