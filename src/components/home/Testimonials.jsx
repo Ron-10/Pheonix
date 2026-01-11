@@ -4,7 +4,7 @@ import './Testimonials.css';
 const testimonials = [
     {
         id: 1,
-        name: "Rajesh Hamal",
+        name: "Rajesh Bista",
         role: "CEO, TechWorld Nepal",
         image: "https://randomuser.me/api/portraits/men/32.jpg",
         text: "Phoenix Trading has been our most reliable partner for over a decade. Their commitment to genuine products and after-sales support is unmatched in Kathmandu."

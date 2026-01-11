@@ -798,6 +798,7 @@
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 6rem;
+    /* Reverting to start to align headers at the top */
     align-items: start;
     position: relative;
     z-index: 1;
@@ -810,7 +811,7 @@
     border-left: 6px solid var(--color-primary);
     border-radius: 20px;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.05);
-    margin-bottom: 2rem;
+    margin-bottom: 0;
     position: relative;
     border: 1px solid rgba(255, 255, 255, 0.5);
 }
@@ -1928,5 +1929,58 @@
 
     .inspiration-main-text {
         font-size: 1.1rem;
+    }
+}
+
+/* Chairman Image in About Section */
+.chairman-content-wrapper {
+    display: flex;
+    gap: 2rem;
+    margin-bottom: 0;
+    align-items: center;
+}
+
+.chairman-image-container {
+    flex-shrink: 0;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+    border: 4px solid #fff;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    position: relative;
+}
+
+.chairman-image-container::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    border-radius: 50%;
+    border: 2px solid rgba(4, 120, 87, 0.2);
+}
+
+.chairman-home-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.chairman-image-container:hover .chairman-home-img {
+    transform: scale(1.1);
+}
+
+@media (max-width: 640px) {
+    .chairman-content-wrapper {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .quote-box {
+        text-align: center;
+    }
+
+    .quote-author {
+        justify-content: center;
     }
 }

@@ -161,9 +161,47 @@ const Brands = () => {
                             </ul>
                         </div>
                     </div>
+                    {/* Byintek */}
+                    <div className="partner-card byintek">
+                        <div className="partner-logo-area">
+                            <h3>Byintek</h3>
+                        </div>
+                        <div className="partner-content">
+                            <h4>Cinema Without Limits</h4>
+                            <p>
+                                Byintek redefines projection with ultra-bright visuals, immersive clarity,
+                                and smart performance. From home theaters to outdoor movie nights,
+                                Byintek turns any space into a true cinematic experience.
+                            </p>
+                            <ul className="partner-products">
+                                <li>High-Brightness Smart Projectors</li>
+                                <li>Portable Cinema Systems</li>
+                                <li>Premium Home Theater Solutions</li>
+                            </ul>
+                        </div>
+                    </div>
+                    {/* Vevshao */}
+                    <div className="partner-card vevshao">
+                        <div className="partner-logo-area">
+                            <h3>Vevshao</h3>
+                        </div>
+                        <div className="partner-content">
+                            <h4>Compact Smart Viewing</h4>
+                            <p>
+                                Vevshao offers compact and user-friendly projectors designed for everyday
+                                entertainment, combining smart features with simple, reliable performance.
+                            </p>
+                            <ul className="partner-products">
+                                <li>Mini Projectors</li>
+                                <li>Portable Projectors</li>
+                                <li>Home Viewing Solutions</li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
             </section>
         </div>
+
     );
 };
 

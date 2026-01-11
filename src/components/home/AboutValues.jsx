@@ -1,6 +1,8 @@
 import React from 'react';
 import './Home.css';
 
+import rahulImg from '../../assets/Rahul.png';
+
 const values = [
     { title: 'Respect', icon: '🙏', desc: 'For the Individual' },
     { title: 'Service', icon: '🤲', desc: 'To the Customer' },
@@ -15,30 +17,23 @@ const AboutValues = () => {
                 <div className="about-grid">
                     <div className="chairman-message">
                         <h2 className="section-title" style={{ textAlign: 'left' }}>About Us</h2>
-                        <div className="quote-box">
-                            <p className="quote-text">
-                                "Dedicated to fostering strong partnerships that fuel consistent sustainable growth.
-                                Our life-long goal is to 'Build Customer for Life' with a 'Never Give Up' theory."
-                            </p>
-                            <div className="quote-author">
-                                <strong>Mr. Rahul Lal Shrestha</strong>
-                                <span>Chairman</span>
+
+                        <div className="chairman-content-wrapper">
+                            <div className="chairman-image-container">
+                                <img src={rahulImg} alt="Mr. Rahul Lal Shrestha" className="chairman-home-img" />
+                            </div>
+                            <div className="quote-box">
+                                <p className="quote-text">
+                                    "Dedicated to fostering strong partnerships that fuel consistent sustainable growth.
+                                    Our life-long goal is to 'Build Customer for Life' with a 'Never Give Up' theory."
+                                </p>
+                                <div className="quote-author">
+                                    <strong>Mr. Rahul Lal Shrestha</strong>
+                                    <span>Chairman</span>
+                                </div>
                             </div>
                         </div>
-                        <div className="about-text">
-                            <p>
-                                Established in 2010 in the heart of Kathmandu, Phoenix Trading bridges the gap between
-                                technology and the people. We are committed to bringing the finest technology and services
-                                to the community.
-                            </p>
-                            <p style={{ marginTop: '1rem' }}>
-                                With over a decade of experience, we have established ourselves as a trusted partner for global
-                                technology brands. Our journey is defined by a relentless pursuit of excellence and a deep
-                                understanding of the local market. We believe in empowering businesses and individuals with
-                                tools that enhance productivity and lifestyle. From enterprise-grade security solutions to
-                                immersive home entertainment, Phoenix Trading is your gateway to the future of technology.
-                            </p>
-                        </div>
+
                     </div>
 
                     <div className="values-container">

@@ -6,6 +6,8 @@ import unitekLogo from '../../assets/Unitek logo.png';
 import aiwaLogo from '../../assets/aiwa.png';
 import esetLogo from '../../assets/eset.png';
 import wanboLogo from '../../assets/Wanbo logo.png';
+import byintekLogo from '../../assets/byintek.png';
+import vevshaoLogo from '../../assets/vevshao.png';
 
 const brandsData = [
     {
@@ -84,7 +86,36 @@ const brandsData = [
             'Smart Projectors', 'Portable Projectors', 'Home Cinema Systems',
             'Mini Projectors', 'Android TV Projectors'
         ]
-    }
+    },
+    {
+        id: 8,
+        name: 'Byintek',
+        logo: byintekLogo,
+        slogan: 'Big screen. Anywhere.',
+        description: 'Byintek projectors deliver powerful brightness and sharp visuals for home cinema, business presentations, and outdoor entertainment. Built for reliability and performance, Byintek brings the theater experience wherever you go.',
+        products: [
+            'Smart Projectors',
+            'Portable Projectors',
+            'Home Cinema Projectors',
+            'Business Projectors',
+            'Android Projectors'
+        ]
+    },
+    {
+        id: 9,
+        name: 'Vevshao',
+        logo: vevshaoLogo,
+        slogan: 'Smart vision. Simple living.',
+        description: 'Vevshao focuses on compact, user-friendly projectors designed for everyday entertainment. With smart features, easy setup, and vibrant display quality, Vevshao makes big-screen viewing accessible for everyone.',
+        products: [
+            'Mini Projectors',
+            'Smart LED Projectors',
+            'Portable Projectors',
+            'Home Entertainment Projectors',
+            'Android TV Projectors'
+        ]
+    },
+
 ];
 
 const BrandsGrid = () => {
